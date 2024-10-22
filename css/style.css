@@ -1,0 +1,69 @@
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'nd nd nd nd nd nd nd nd'
+        'id id id id id id id id'
+        'Td Td Td Td Td Td Td Td'
+        'sd sd sd sd hd hd hd hd'
+        'scd scd scd scd scd scd scd scd';
+    gap: 10px;
+    padding: 20px;
+}
+
+#navDiv {
+    grid-area: nd;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#imgDiv {
+    grid-area: id;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#tagDiv {
+    grid-area: Td;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+#skillDiv, #hobbiesDiv, #contactDiv, #socialDiv {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+#skillDiv {
+    grid-area: sd;
+}
+
+#hobbiesDiv {
+    grid-area: hd;
+}
+
+
+#socialDiv {
+    grid-area: scd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    grid-area: scd;
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    color: black;
+}
